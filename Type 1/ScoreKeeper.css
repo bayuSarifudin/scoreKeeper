@@ -1,0 +1,25 @@
+h1 {
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreBoard {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.board {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.boardScore {
+    display: block;
+    text-align: center;
+}

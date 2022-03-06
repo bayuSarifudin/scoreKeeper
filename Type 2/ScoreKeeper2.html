@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ScoreKeeper2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Score Keeper</h1>
+        <div class="column">
+            <div>
+                <label for="p1NameInput">Player 1:</label>
+                <input type="text" id="p1NameInput">
+            </div>
+            <div>
+                <label for="p2NameInput">Player 2:</label>
+                <input type="text" id="p2NameInput">
+            </div>
+        </div>
+        <div class="column ">
+            <div class="center">
+                <h2>
+                    <span id="p1Name">Player1</span> (<span id="p1ScoreBoard">0</span> - <span id="p2ScoreBoard">0</span>) <span id="p2Name">Player2</span>
+                </h2>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <label for="targetScore">Playing To:</label>
+                <input type="number" name="" id="targetScore" min="0">
+            </div>
+        </div>
+        <div class="column">
+            <button class="button button-player" id="p1Button">player 1 score</button>
+            <button class="button button-player" id="p2Button">player 2 score</button>
+            <button class="button button-reset" id="rButton">Reset</button>
+        </div>
+
+    </div>
+    <script src="ScoreKeeper2.js"></script>
+</body>
+
+</html>

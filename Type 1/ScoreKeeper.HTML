@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="ScoreKeeper.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <h1 class="card-header-title">Ping Pong Score Keeper</h1>
+                        </header>
+                        <div class="card-content">
+                            <div id="inputName">
+                                <div class="board">
+                                    <div>
+                                        <label for="player1">Player 1</label>
+                                        <input type="text" class="input is-small is-primary" id="player1Input" placeholder="Insert Player Name">
+                                    </div>
+                                    <div>
+                                        <label for="player2">Player 2</label>
+                                        <input type="text" class="input is-small is-primary" id="player2Input" placeholder="Insert Player Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="boardScore">
+                                    <p class="scoreBoard">
+                                        <b>
+                                        <span id="p1Name">Player 1</span> (<span id="p1Display">0</span> - <span id="p2Display">0</span>) <span id="p2Name">Player 2</span>
+                                    </b>
+                                    </p>
+                                    <p>Please Use the button below to keep the score</p>
+                                    <label for="playTo" class="label is-large is-inline">Playing to</label>
+                                    <div class="select is-rounded">
+                                        <select name="playTo" id="playTo">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Btn" class="button is-primary card-footer-item is-large">+1 Player One</button>
+                            <button id="p2Btn" class="button is-primary card-footer-item is-large">+1 Player Two</button>
+                            <button id="reset" class="button is-danger card-footer-item is-large">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="ScoreKeeper.js"></script>
+</body>
+
+</html>
